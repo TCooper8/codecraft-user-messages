@@ -1,0 +1,39 @@
+{
+  "namespace": "codecraft.user",
+  "messages": {
+    "User": {
+      "id": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string"
+    },
+    "AddUser": {
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string"
+    },
+    "AddUserReply": {
+      "id": "string option",
+      "error": "string option"
+    },
+    "GetUser": {
+      "id": "string"
+    },
+    "GetUserReply": {
+      "user": "User option",
+      "error": "string option"
+    }
+  },
+  "services": {
+    "UserService": {
+      "add": {
+        "request": "AddUser",
+        "response": "AddUserReply"
+      },
+      "get": {
+        "request": "GetUser",
+        "response": "GetUserReply"
+      }
+    }
+  }
+}
