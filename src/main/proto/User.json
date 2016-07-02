@@ -10,17 +10,21 @@
     "AddUser": {
       "firstName": "string",
       "lastName": "string",
-      "email": "string"
+      "email": "string",
+      "password": "string"
     },
     "AddUserReply": {
       "id": "string option",
+      "token": "string option",
       "error": "string option"
     },
     "GetUser": {
-      "id": "string"
+      "id": "string",
+      "token": "string"
     },
     "GetUserReply": {
       "user": "User option",
+      "token": "string option",
       "error": "string option"
     }
   },
