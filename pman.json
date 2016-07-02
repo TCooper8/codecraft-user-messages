@@ -1,15 +1,12 @@
 {
   "name": "codecraft/user-messages",
   "dependencies": {
-    "pman": true,
     "codecraft/codegen": true,
     "codecraft/pman": true
   },
-  "scripts": {
-    "gen": true
-  },
   "publish": [
     "npm install ./",
+    "npm run gen",
     "sbt publish-local"
   ]
 }
